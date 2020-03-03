@@ -1,0 +1,187 @@
+Last login: Tue Mar  3 19:28:55 on ttys000
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+MBP-de-helder:~ helderfernandes$ ls /home
+MBP-de-helder:~ helderfernandes$ mkdir planets/real/telluric planets/real/gas-giants planets/real/dwarf-planets
+MBP-de-helder:~ helderfernandes$ ls
+Applications	Downloads	Music		inhabited	quetes
+Desktop		Library		Pictures	planets		real
+Documents	Movies		Public		planets.zip
+MBP-de-helder:~ helderfernandes$ ls planets
+arrakis.jpeg	earth.jpeg	jupiter.jpeg	neptune.jpeg	saturn.jpeg
+coruscant.jpeg	fictional	mars.jpeg	pluto.jpeg	uranus.jpeg
+cybertron.jpeg	inhabited	mercury.jpeg	real		venus.jpeg
+MBP-de-helder:~ helderfernandes$ mv eart jupiter neptune saturn mars pluto uranus mercury venus real/
+mv: rename eart to real/eart: No such file or directory
+mv: rename jupiter to real/jupiter: No such file or directory
+mv: rename neptune to real/neptune: No such file or directory
+mv: rename saturn to real/saturn: No such file or directory
+mv: rename mars to real/mars: No such file or directory
+mv: rename pluto to real/pluto: No such file or directory
+mv: rename uranus to real/uranus: No such file or directory
+mv: rename mercury to real/mercury: No such file or directory
+mv: rename venus to real/venus: No such file or directory
+MBP-de-helder:~ helderfernandes$ mv eartth jupiter
+mv: rename eartth to jupiter: No such file or directory
+MBP-de-helder:~ helderfernandes$ mv eath
+usage: mv [-f | -i | -n] [-v] source target
+       mv [-f | -i | -n] [-v] source ... directory
+MBP-de-helder:~ helderfernandes$ mv earth real
+mv: rename earth to real/earth: No such file or directory
+MBP-de-helder:~ helderfernandes$ mv earth real/
+mv: rename earth to real/earth: No such file or directory
+MBP-de-helder:~ helderfernandes$ mv earth.jpeg real
+mv: rename earth.jpeg to real/earth.jpeg: No such file or directory
+MBP-de-helder:~ helderfernandes$ cd ..
+MBP-de-helder:Users helderfernandes$ mv earth.jpeg real
+mv: rename earth.jpeg to real: No such file or directory
+MBP-de-helder:Users helderfernandes$ ls
+Shared		helderfernandes
+MBP-de-helder:Users helderfernandes$ cd ..
+MBP-de-helder:/ helderfernandes$ ls
+Applications	Users		cores		home		sbin		var
+Library		Volumes		dev		opt		tmp
+System		bin		etc		private		usr
+MBP-de-helder:/ helderfernandes$ ls planets
+ls: planets: No such file or directory
+MBP-de-helder:/ helderfernandes$ ls /home
+MBP-de-helder:/ helderfernandes$ ls
+Applications	Users		cores		home		sbin		var
+Library		Volumes		dev		opt		tmp
+System		bin		etc		private		usr
+MBP-de-helder:/ helderfernandes$ ls /planets
+ls: /planets: No such file or directory
+MBP-de-helder:/ helderfernandes$ ls planets
+ls: planets: No such file or directory
+MBP-de-helder:/ helderfernandes$ ls /home/planets
+ls: /home/planets: No such file or directory
+MBP-de-helder:/ helderfernandes$ ls planets
+ls: planets: No such file or directory
+MBP-de-helder:/ helderfernandes$ ls .
+Applications	Users		cores		home		sbin		var
+Library		Volumes		dev		opt		tmp
+System		bin		etc		private		usr
+MBP-de-helder:/ helderfernandes$ ls
+Applications	Users		cores		home		sbin		var
+Library		Volumes		dev		opt		tmp
+System		bin		etc		private		usr
+MBP-de-helder:/ helderfernandes$ ls /home
+MBP-de-helder:/ helderfernandes$ ls
+Applications	Users		cores		home		sbin		var
+Library		Volumes		dev		opt		tmp
+System		bin		etc		private		usr
+MBP-de-helder:/ helderfernandes$ ls /home
+MBP-de-helder:/ helderfernandes$ ls planets
+ls: planets: No such file or directory
+MBP-de-helder:/ helderfernandes$ cd planets
+-bash: cd: planets: No such file or directory
+MBP-de-helder:/ helderfernandes$ cd
+MBP-de-helder:~ helderfernandes$ ls planets
+arrakis.jpeg	earth.jpeg	jupiter.jpeg	neptune.jpeg	saturn.jpeg
+coruscant.jpeg	fictional	mars.jpeg	pluto.jpeg	uranus.jpeg
+cybertron.jpeg	inhabited	mercury.jpeg	real		venus.jpeg
+MBP-de-helder:~ helderfernandes$ mv earth.jpeg real
+mv: rename earth.jpeg to real/earth.jpeg: No such file or directory
+MBP-de-helder:~ helderfernandes$ cd ..
+MBP-de-helder:Users helderfernandes$ mv earth.jpeg real
+mv: rename earth.jpeg to real: No such file or directory
+MBP-de-helder:Users helderfernandes$ mv eart real
+mv: rename eart to real: No such file or directory
+MBP-de-helder:Users helderfernandes$ mv earth.jpeg real/
+mv: rename earth.jpeg to real/: No such file or directory
+MBP-de-helder:Users helderfernandes$ cd
+MBP-de-helder:~ helderfernandes$ ls
+Applications	Downloads	Music		inhabited	quetes
+Desktop		Library		Pictures	planets		real
+Documents	Movies		Public		planets.zip
+MBP-de-helder:~ helderfernandes$ cd planets
+MBP-de-helder:planets helderfernandes$ ls
+arrakis.jpeg	earth.jpeg	jupiter.jpeg	neptune.jpeg	saturn.jpeg
+coruscant.jpeg	fictional	mars.jpeg	pluto.jpeg	uranus.jpeg
+cybertron.jpeg	inhabited	mercury.jpeg	real		venus.jpeg
+MBP-de-helder:planets helderfernandes$ mv earth.jpeg real
+MBP-de-helder:planets helderfernandes$ mv jupiter.jpeg neptune.jpeg saturn.jpeg mars.jpeg pluto.jpeg uranus.jpeg mercury.jpeg venus.jpeg real
+MBP-de-helder:planets helderfernandes$ ls
+arrakis.jpeg	coruscant.jpeg	cybertron.jpeg	fictional	inhabited	real
+MBP-de-helder:planets helderfernandes$ cd real
+MBP-de-helder:real helderfernandes$ ls
+dwarf-planets	gas-giants	mars.jpeg	neptune.jpeg	saturn.jpeg	uranus.jpeg
+earth.jpeg	jupiter.jpeg	mercury.jpeg	pluto.jpeg	telluric	venus.jpeg
+MBP-de-helder:real helderfernandes$ cd ..
+MBP-de-helder:planets helderfernandes$ ls
+arrakis.jpeg	coruscant.jpeg	cybertron.jpeg	fictional	inhabited	real
+MBP-de-helder:planets helderfernandes$ mv arrakis.jpeg coruscant.jpeg cybertron.jpeg inhabited
+MBP-de-helder:planets helderfernandes$ ls
+fictional	inhabited	real
+MBP-de-helder:planets helderfernandes$ cd inhabited
+MBP-de-helder:inhabited helderfernandes$ ls
+arrakis.jpeg	coruscant.jpeg	cybertron.jpeg
+MBP-de-helder:inhabited helderfernandes$ cd real
+-bash: cd: real: No such file or directory
+MBP-de-helder:inhabited helderfernandes$ ls
+arrakis.jpeg	coruscant.jpeg	cybertron.jpeg
+MBP-de-helder:inhabited helderfernandes$ cd ..
+MBP-de-helder:planets helderfernandes$ ls
+fictional	inhabited	real
+MBP-de-helder:planets helderfernandes$ cd real
+MBP-de-helder:real helderfernandes$ ls
+dwarf-planets	gas-giants	mars.jpeg	neptune.jpeg	saturn.jpeg	uranus.jpeg
+earth.jpeg	jupiter.jpeg	mercury.jpeg	pluto.jpeg	telluric	venus.jpeg
+MBP-de-helder:real helderfernandes$ mv pluto.jpeg planets
+MBP-de-helder:real helderfernandes$ mv planets pluto.jpeg
+MBP-de-helder:real helderfernandes$ mv pluto.jpeg planets/
+mv: rename pluto.jpeg to planets/: No such file or directory
+MBP-de-helder:real helderfernandes$ mv real/pluto.jpeg planets
+mv: rename real/pluto.jpeg to planets: No such file or directory
+MBP-de-helder:real helderfernandes$ cd ..
+MBP-de-helder:planets helderfernandes$ ls
+fictional	inhabited	real
+MBP-de-helder:planets helderfernandes$ mv real/pluto.jpeg planets
+MBP-de-helder:planets helderfernandes$ ls
+fictional	inhabited	planets		real
+MBP-de-helder:planets helderfernandes$ mv planets pluto.jpeg
+MBP-de-helder:planets helderfernandes$ cp real/earth.jpeg jupiter.jpeg neptune.jpeg saturn.jpeg inhabited
+cp: jupiter.jpeg: No such file or directory
+cp: neptune.jpeg: No such file or directory
+cp: saturn.jpeg: No such file or directory
+MBP-de-helder:planets helderfernandes$ ls
+fictional	inhabited	pluto.jpeg	real
+MBP-de-helder:planets helderfernandes$ cd ..
+MBP-de-helder:~ helderfernandes$ ls
+Applications	Downloads	Music		inhabited	quetes
+Desktop		Library		Pictures	planets		real
+Documents	Movies		Public		planets.zip
+MBP-de-helder:~ helderfernandes$ cd planets
+MBP-de-helder:planets helderfernandes$ ls
+fictional	inhabited	pluto.jpeg	real
+MBP-de-helder:planets helderfernandes$ cd ..
+MBP-de-helder:~ helderfernandes$ ls
+Applications	Downloads	Music		inhabited	quetes
+Desktop		Library		Pictures	planets		real
+Documents	Movies		Public		planets.zip
+MBP-de-helder:~ helderfernandes$ cd planets
+MBP-de-helder:planets helderfernandes$ ls
+fictional	inhabited	pluto.jpeg	real
+MBP-de-helder:planets helderfernandes$ rm planets/pluto.jpeg
+rm: planets/pluto.jpeg: No such file or directory
+MBP-de-helder:planets helderfernandes$ rm pluto.jpeg
+MBP-de-helder:planets helderfernandes$ ls
+fictional	inhabited	real
+MBP-de-helder:planets helderfernandes$ cd real
+MBP-de-helder:real helderfernandes$ ls
+dwarf-planets	gas-giants	mars.jpeg	neptune.jpeg	telluric	venus.jpeg
+earth.jpeg	jupiter.jpeg	mercury.jpeg	saturn.jpeg	uranus.jpeg
+MBP-de-helder:real helderfernandes$ mv mars.jpeg venus.jpeg earth.jpeg mercury.jpeg telluric
+MBP-de-helder:real helderfernandes$ mv jupiter.jpeg saturn.jpeg uranus.jpeg gas-giants
+MBP-de-helder:real helderfernandes$ rm dwarf-planets
+rm: dwarf-planets: is a directory
+MBP-de-helder:real helderfernandes$ rm -r warf-planets
+rm: warf-planets: No such file or directory
+MBP-de-helder:real helderfernandes$ rm -r warf-planets/
+rm: warf-planets/: No such file or directory
+MBP-de-helder:real helderfernandes$ ls
+dwarf-planets	gas-giants	neptune.jpeg	telluric
+MBP-de-helder:real helderfernandes$ rm -r dwarf-planets
+MBP-de-helder:real helderfernandes$ 
